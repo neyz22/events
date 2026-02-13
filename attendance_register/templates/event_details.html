@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+        <link rel="stylesheet" href="../../static/assets/styles/main.css">
+</head>
+<body>
+<form action="/submit" method="post">
+  <label for="title">Title:</label><br>
+  <input type="text" id="title" name="title" placeholder="Enter title" required><br><br>
+
+  <label for="date">Date:</label><br>
+  <input type="date" id="date" name="date" required><br><br>
+
+  <label for="location">Location:</label><br>
+  <input type="text" id="location" name="location" placeholder="Enter location" required><br><br>
+
+  <label for="description">Description:</label><br>
+  <textarea id="description" name="description" rows="5" placeholder="Enter description" required></textarea><br><br>
+
+  <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
