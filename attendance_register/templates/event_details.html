@@ -2,25 +2,50 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
-        <link rel="stylesheet" href="../../static/assets/styles/main.css">
+    <title>Event Submission</title>
+    <link rel="stylesheet" href="../../static/assets/styles/main.css">
 </head>
 <body>
-<form action="/submit" method="post">
-  <label for="title">Title:</label><br>
-  <input type="text" id="title" name="title" placeholder="Enter title" required><br><br>
 
-  <label for="date">Date:</label><br>
-  <input type="date" id="date" name="date" required><br><br>
+    <!-- Container for Form -->
+    <div class="container py-5">
+        <h1 class="text-center mb-4">Event Submission</h1>
 
-  <label for="location">Location:</label><br>
-  <input type="text" id="location" name="location" placeholder="Enter location" required><br><br>
+        <!-- Glass Card Form -->
+        <div class="glass-card">
+            <form action="/submit" method="post">
+                <div class="mb-3">
+                    <label for="title" class="form-label">Title:</label>
+                    <input type="text" id="title" name="title" class="form-control" placeholder="Enter title" required>
+                </div>
 
-  <label for="description">Description:</label><br>
-  <textarea id="description" name="description" rows="5" placeholder="Enter description" required></textarea><br><br>
+                <div class="mb-3">
+                    <label for="date" class="form-label">Date:</label>
+                    <input type="date" id="date" name="date" class="form-control" required>
+                </div>
 
-  <input type="submit" value="Submit">
-</form>
+                <div class="mb-3">
+                    <label for="location" class="form-label">Location:</label>
+                    <input type="text" id="location" name="location" class="form-control" placeholder="Enter location" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="description" class="form-label">Description:</label>
+                    <textarea id="description" name="description" class="form-control" rows="5" placeholder="Enter description" required></textarea>
+                </div>
+
+                <!-- Submit Button -->
+                <div class="text-center">
+                    <input type="submit" value="Submit" class="btn-glow">
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center mt-5">
+        &copy; All Rights Reserved, VK Events 2026.
+    </footer>
 
 </body>
 </html>
