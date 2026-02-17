@@ -1,12 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Event-List</title>
-    <link rel="stylesheet" href="../../static/assets/styles/main.css">
-    <link href="../../static/assets/styles/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-</head>
-<body>
+{% extends 'base.html' %}
+{% block title %}
+    Event List
+{% endblock %}
+{% block content %}
 
     <div class="container py-5">
         <h2 class="text-center mb-4">Upcoming Events</h2>
@@ -69,11 +65,5 @@
         </div>
     </div>
 
-    <footer class="bg-dark text-white text-center py-3 mt-5">
-        &copy; All Rights Reserved, VK Events 2026.
-    </footer>
+{% endblock %}
 
-    <script src="../../static/assets/styles/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-</body>
-</html>

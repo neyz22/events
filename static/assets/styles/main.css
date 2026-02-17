@@ -93,7 +93,7 @@ h2 {
 }
 
 .btn-glow:hover {
-    background: #ffffff;
+    background: blue;
     transform: translateY(-3px);
     box-shadow: 0 8px 25px rgba(255, 111, 97, 0.4);
 }
